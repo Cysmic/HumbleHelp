@@ -1,0 +1,31 @@
+spring:
+  application:
+    name: hello
+
+---
+spring:
+  profiles: prod
+
+---
+spring:
+  profiles: dev
+
+hello:
+  message: "hello (dev)"
+
+---
+spring:
+  profiles: test
+
+hello:
+  message: "hello (test)"
+
+---
+spring:
+  profiles: local
+
+hello:
+  message: "hello (local)"
+
+logging.level:
+  hello: DEBUG
