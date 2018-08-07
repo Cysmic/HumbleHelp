@@ -1,1 +1,13 @@
 rootProject.name = 'complete'
+//lib version
+gradle.ext.hsqldbVersion = '2.4.1'
+//Database config
+gradle.ext.dbName = "humblehelp"
+gradle.ext.dbFile = "dev/database/devDB"
+gradle.ext.dbUser = "SA"
+gradle.ext.dbPassword = "password"
+gradle.ext.dbPort = 7117
+gradle.ext.dbHost = "localhost"
+gradle.ext.dbUrl = "jdbc:hsqldb:hsql://${gradle.dbHost}:${gradle.dbPort}/${gradle.dbName}"
+gradle.ext.dbDrive = "org.hsqldb.jdbc.JDBCDriver"
+

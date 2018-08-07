@@ -1,6 +1,8 @@
 spring:
   application:
     name: hello
+  thymeleaf:
+    cache: false
 
 ---
 spring:
